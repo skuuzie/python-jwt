@@ -147,6 +147,9 @@ class JWT:
         header, payload, claimed_signature = jwt.split('.')
 
         if algorithm:
+            if algorithm != Util.json_to_dict(header)['alg']:
+                return False
+            
             self.__set_algorithm(algorithm)
         else:
             self.__set_algorithm(Util.json_to_dict(header)['alg'])
