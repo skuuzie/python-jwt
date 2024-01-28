@@ -26,7 +26,7 @@ sign(key, payload, algorithm)
 
 To validate a JWT
 ```
-validate(key, encoded_jwt, algorithm)
+validate(key, jwt, algorithm)
 algorithm is optional for validation, but highly recommended. see rfc8725#section-3
 ```
 
