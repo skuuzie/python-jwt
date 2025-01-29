@@ -38,7 +38,7 @@ generate_ecc_key(size, save_key=True)
 
 See `*_example.py` files in `examples` folder for example usage of each algorithm.
 
-For testing, use [JWT.IO](https://jwt.io/)
+For testing, use [JWT.IO](https://jwt.io/) or check `examples` with `pytest`
 
 Notes
 -----
