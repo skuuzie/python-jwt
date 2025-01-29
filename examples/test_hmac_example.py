@@ -25,6 +25,6 @@ print(generated_jwt, '\n')
 print(valid, '\n')
 print(invalid, '\n')
 
-def test_key_validity():
+def test_keys_validity():
     assert valid == True
     assert invalid == False
